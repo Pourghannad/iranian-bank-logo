@@ -9,9 +9,14 @@ iranian bank logo with svg and css animation
 لوگو های اصلی توسط وب سایت  <a href="https://logosource.ir/" title="logosource">لوگو سورس</a> ساخته شدن و من فقط مقداری اون هارو بهینه کردم و انیمیشن های مختلف به اون ها اضافه کردم 
 
 </p>
+<br />
 
-<h4 align="center">این پروژه هنوز تکمیل نشده و در حال انجام هست</h4>
+<p align="center">این پروژه هنوز تکمیل نشده و در حال انجام هست</p>
+<br />
+## English Description 
 
-## English Description (Just For Test)
+<br />
 
-<h4 align="center">This project is not completed and in processing</h4>
+<p align="center">This project is not completed and in processing</p>
+
+<br />
