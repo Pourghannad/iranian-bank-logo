@@ -29,25 +29,16 @@
         width: 200px;
         height: 200px;
       }
-      main section svg #path16 {
-        transform: rotate3d(1, 0, 0, 0deg);
-        animation-name: samanOne;
+      main section svg #path16, main section svg #path18, main section svg #path20 {
+        animation-name: samanTwo;
         animation-duration: 200ms;
         animation-iteration-count: 2;
       }
       main section svg #path18 {
-        transform: rotate3d(1, 0, 0, 0deg);
-        animation-name: samanOne;
         animation-delay: 100ms;
-        animation-duration: 200ms;
-        animation-iteration-count: 2;
       }
       main section svg #path20 {
-        transform: rotate3d(1, 0, 0, 0deg);
-        animation-name: samanOne;
         animation-delay: 50ms;
-        animation-duration: 200ms;
-        animation-iteration-count: 2;
       }
       @keyframes samanOne {
         0% {
@@ -58,6 +49,17 @@
         }
         100% {
           transform: rotate3d(1, 0, 0, 0deg);
+        }
+      }
+      @keyframes samanTwo {
+        0% {
+          transform: rotate3d(0, 1, 0, 0deg);
+        }
+        50% {
+          transform: rotate3d(0, 1, 0, 15deg);
+        }
+        100% {
+          transform: rotate3d(0, 1, 0, 0deg);
         }
       }
     </style>
