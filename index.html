@@ -30,20 +30,20 @@
         width: 200px;
         height: 200px;
       }
-      main section svg #path16,
-      main section svg #path18,
-      main section svg #path20 {
+      main section svg.saman #path16,
+      main section svg.saman #path18,
+      main section svg.saman #path20 {
         animation-name: samanTwo;
         animation-duration: 200ms;
         animation-iteration-count: 2;
       }
-      main section svg #path18 {
+      main section svg.saman #path18 {
         animation-delay: 100ms;
       }
-      main section svg #path20 {
+      main section svg.saman #path20 {
         animation-delay: 50ms;
       }
-      main section svg #path22 {
+      main section svg.saman #path22 {
         fill: transparent;
         stroke: transparent;
         fill: #024b8f;
@@ -95,6 +95,47 @@
           transform: rotate3d(0, 1, 0, 0deg);
         }
       }
+
+      main section svg.dey .deyOne, main section svg.dey .deyTwo {
+        animation-name: deyOne;
+        animation-duration: 200ms;
+        animation-iteration-count: 2;
+      }
+      main section svg.dey .deyOne {
+        animation-delay: 90ms;
+      }
+      @keyframes deyOne {
+        0% {
+          opacity: 0;
+        }
+        10% {
+          opacity: 0.1;
+        }
+        20% {
+          opacity: 0.8;
+        }
+        25% {
+          opacity: 1;
+        }
+        30% {
+          opacity: 0;
+        }
+        33% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        60% {
+          opacity: 0.2;
+        }
+        90% {
+          opacity: 0.3;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
     </style>
     <title>iranian bank logo</title>
   </head>
@@ -106,6 +147,7 @@
           viewBox="0 0 1250 1050"
           xml:space="preserve"
           version="1.1"
+          class="saman"
         >
           <g transform="matrix(1.3333333,0,0,-1.3333333,0,1461.3333)" id="g10">
             <g transform="scale(0.1)" id="g12">
@@ -153,10 +195,12 @@
           viewBox="0 0 1250 1050"
           xml:space="preserve"
           version="1.1"
+          class="dey"
         >
           <g transform="matrix(1.3333333,0,0,-1.3333333,80,1375)" id="g10">
             <g transform="scale(0.1)" id="g12">
               <path
+                class="deyOne"
                 style="
                   fill: #00899e;
                   fill-opacity: 1;
@@ -166,6 +210,7 @@
                 d="m 5256.71,9333.59 c 338.61,188.7 737.07,314.81 1126.45,245.62 0,-157.77 6.87,-1154.67 6.87,-1154.67 -29.44,-22.33 -69.68,-14.23 -103.78,-22.33 -268.69,-49.31 -522.14,-159 -759.88,-291 -468.62,-265.23 -876.94,-625.17 -1240.06,-1019.98 -445.07,-502 -915.93,-992.95 -1481.74,-1360.52 -394.78,-255.9 -859.25,-434.53 -1336,-407.8 -382.75,35.84 -754.484,199.97 -1035.902,462.78 -250.77,235.06 -405.1055,569.44 -420.5547,912.48 -10.83986,97.66 -14.69924,175.08 -2.20705,269.16 26.50005,333.93 129.05075,676.96 362.63675,926.24 311.125,341.8 791.297,479.45 1242.027,473.06 625.93,-15.95 1204.73,-312.59 1694.71,-683.58 38.27,-13.98 8.84,-52.99 -5.64,-72.62 -75.57,-113.6 -146.97,-229.91 -223.27,-343.02 -368.54,255.17 -774.37,473.8 -1218.96,557.47 -265.73,47.6 -553.05,43.43 -797.43,-83.67 -306.71,-156.54 -497.113,-485.08 -538.812,-820.25 -22.824,-148.21 5.641,-299.83 70.168,-434.3 139.121,-295.9 417.604,-535.59 745.414,-586.64 135.69,-23.81 273.82,-4.17 407.05,24.03 258.36,45.16 508.88,136.93 731.92,275.3 243.4,150.15 452.69,349.4 639.17,565.06 283.87,331.5 517.46,702.23 734.86,1079.85 353.56,586.91 802.3,1142.15 1402.96,1489.33"
               />
               <path
+                class="deyTwo"
                 style="
                   fill: #00899e;
                   fill-opacity: 1;
@@ -265,7 +310,6 @@
                 d="m 2732.28,4453.77 h 157.7 c 177.41,0 604.51,-85.43 604.51,-505.95 v -170.84 h -203.7 l -0.09,132.92 c 0,149.62 -107.22,344.55 -407.29,344.55 h -151.13 v 199.32"
               />
             </g>
-          </g>
         </svg>
       </section>
     </main>
