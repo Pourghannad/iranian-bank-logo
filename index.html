@@ -96,13 +96,15 @@
         }
       }
 
-      main section svg.dey .deyOne, main section svg.dey .deyTwo {
-        animation-name: deyOne;
+      main section svg.dey .deyOne {
+        animation-name: deyTwo;
         animation-duration: 200ms;
         animation-iteration-count: 2;
       }
-      main section svg.dey .deyOne {
-        animation-delay: 90ms;
+      main section svg.dey .deyTwo {
+        animation-name: deyTwoPath2;
+        animation-duration: 200ms;
+        animation-iteration-count: 2;
       }
       @keyframes deyOne {
         0% {
@@ -118,7 +120,7 @@
           opacity: 1;
         }
         30% {
-          opacity: 0;
+          opacity: 0.2;
         }
         33% {
           opacity: 1;
@@ -134,6 +136,31 @@
         }
         100% {
           opacity: 1;
+        }
+      }
+      @keyframes deyTwo {
+        0% {
+          transform: skewX(0deg);
+        }
+        50% {
+          transform: skewX(5deg);
+        }
+        /* 40% {
+          transform: skewX(5deg);
+        } */
+        100% {
+          transform: skewX(0deg);
+        }
+      }
+      @keyframes deyTwoPath2 {
+        0% {
+          transform: skewX(0deg);
+        }
+        50% {
+          transform: skewX(-5deg);
+        }
+        100% {
+          transform: skewX(0deg);
         }
       }
     </style>
