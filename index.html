@@ -127,21 +127,15 @@
           transform: rotate3d(0, 1, 0, 0deg);
         }
       }
-
-      main section svg.dey .deyOne {
+      main section svg.dey .deyOne, main section svg.dey .deyTwo, main section svg.dey .dey-logo-type {
+        animation-duration: 200ms;
+        animation-iteration-count: 2;
+      }
+      main section svg.dey.animate .deyOne {
         animation-name: deyTwo;
-        animation-duration: 200ms;
-        animation-iteration-count: 2;
       }
-      main section svg.dey .deyTwo {
+      main section svg.dey.animate .deyTwo, main section svg.dey.animate .dey-logo-type {
         animation-name: deyTwoPath2;
-        animation-duration: 200ms;
-        animation-iteration-count: 2;
-      }
-      main section svg.dey .dey-logo-type {
-        animation-name: deyTwoPath2;
-        animation-duration: 200ms;
-        animation-iteration-count: 2;
       }
       main section svg.dey .dey-logo-type:nth-of-type(7) {
         animation-delay: 25ms;
@@ -209,9 +203,6 @@
         50% {
           transform: skewX(5deg);
         }
-        /* 40% {
-          transform: skewX(5deg);
-        } */
         100% {
           transform: skewX(0deg);
         }
@@ -296,7 +287,7 @@
           viewBox="0 0 1250 1050"
           xml:space="preserve"
           version="1.1"
-          class="dey"
+          class="dey animate"
         >
           <g transform="matrix(1.3333333,0,0,-1.3333333,80,1375)" id="g10">
             <g transform="scale(0.1)" id="g12">
@@ -422,16 +413,34 @@
               />
             </g>
         </svg>
+        <span class="refresh">
+          <svg width="700px" height="700px" version="1.1" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g>
+             <path d="m447.44 273.28c-3.9219 0-7.2812-2.8008-8.3984-6.7188-9.5195-42-46.48-71.68-90.16-71.68-43.68 0-80.641 29.68-90.16 71.68-1.1211 4.4805-5.6016 7.2812-10.078 6.1602-4.4805-1.1211-7.2812-5.6016-6.1602-10.078 11.199-49.84 55.441-84.559 106.4-84.559 50.961 0 95.199 34.719 106.4 84.559 1.1211 4.4805-1.6797 8.9609-6.1602 10.078-0.5625-0.003906-1.1211 0.55859-1.6797 0.55859z"/>
+             <path d="m450.24 275.52c-1.1211 0-2.2383 0-3.3594-0.55859l-29.121-12.32c-4.4805-1.6797-6.1602-6.7188-4.4805-11.199 1.6797-4.4805 6.7188-6.1602 11.199-4.4805l21.281 8.9609 8.9609-21.281c1.6797-4.4805 6.7188-6.1602 11.199-4.4805 4.4805 1.6797 6.1602 6.7188 4.4805 11.199l-12.32 29.121c-1.1211 2.2383-2.2383 3.9219-4.4805 4.4805-1.1172 0.55859-2.2383 0.55859-3.3594 0.55859z"/>
+             <path d="m350.56 398.72c-50.961 0-95.199-34.719-106.4-84.559-1.1211-4.4805 1.6797-8.9609 6.1602-10.078 4.4805-1.1211 8.9609 1.6797 10.078 6.1602 9.5195 42 46.48 71.68 90.16 71.68 43.68 0 80.641-29.68 90.16-71.68 1.1211-4.4805 5.6016-7.2812 10.078-6.1602 4.4805 1.1211 7.2812 5.6016 6.1602 10.078-11.195 49.84-54.879 84.559-106.4 84.559z"/>
+             <path d="m237.44 347.2c-1.1211 0-2.2383 0-3.3594-0.55859-4.4805-1.6797-6.1602-6.7188-4.4805-11.199l12.32-29.121c1.6797-4.4805 6.7188-6.1602 11.199-4.4805l29.121 12.32c4.4805 1.6797 6.1602 6.7188 4.4805 11.199-1.6797 4.4805-6.7188 6.1602-11.199 4.4805l-21.281-8.9609-8.9609 20.723c-1.1211 3.3594-4.4805 5.5977-7.8398 5.5977z"/>
+            </g>
+           </svg>           
+        </span>
       </section>
     </main>
     <script>
       document.addEventListener('DOMContentLoaded', () => {
-        document.querySelector('.animate').addEventListener('animationend', (event) => {
-          event.srcElement.closest('svg').classList.remove('animate');
-        });
-        document.querySelector('main section .refresh').addEventListener('click', (event) => {
+        const animateElement = document.querySelectorAll('.animate');
+        const refreshElement = document.querySelectorAll('main section .refresh');
+        for (let i = 0; i < animateElement.length; i++) {
+          animateElement[i].addEventListener('animationend', (event) => {
+            setTimeout(() => {
+              event.srcElement.closest('svg').classList.remove('animate');
+            }, 150);
+          });
+        }
+        for (let i = 0; i < refreshElement.length; i++) {
+          refreshElement[i].addEventListener('click', (event) => {
           event.target.parentNode.querySelector("svg").classList.add('animate');
-        });
+        }); 
+        }
       });
     </script>
   </body>
