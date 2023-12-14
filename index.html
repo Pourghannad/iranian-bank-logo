@@ -83,11 +83,11 @@
       margin: 0 4px;
       font-size: 11px;
       font-weight: 600;
-      cursor: not-allowed;
+      cursor: pointer;
     }
 
-    main section .animation-type-container span:first-of-type {
-      box-shadow: 0 0 0 2px #a3a3a3 inset;
+    main section .animation-type-container span.active {
+      box-shadow: 0 0 0 2px #858585 inset;
     }
 
     main section svg.saman #path16,
@@ -335,7 +335,7 @@
         </g>
       </svg>
       <div class="animation-type-container">
-        <span>1</span>
+        <span class="active">1</span>
         <span>2</span>
       </div>
       <span class="refresh">
@@ -464,6 +464,15 @@
     document.addEventListener('DOMContentLoaded', () => {
       const animateElement = document.querySelectorAll('.animate');
       const refreshElement = document.querySelectorAll('main section .refresh');
+      const animateTypeElement = document.querySelectorAll('main section .animation-type-container span');
+      for (let i = 0; i < animateTypeElement.length; i++) {
+        animateTypeElement[i].addEventListener('click', (event) => {
+          if (event.target.className !== "active") {
+            event.target.classList.add('active')
+          }
+        })
+
+      }
       for (let i = 0; i < animateElement.length; i++) {
         animateElement[i].addEventListener('animationend', (event) => {
           setTimeout(() => {
