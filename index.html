@@ -95,10 +95,20 @@
       font-size: 11px;
       font-weight: 600;
       cursor: pointer;
+      transition: all 150ms;
     }
 
     main section .animation-type-container span.active {
-      box-shadow: 0 0 0 2px #858585 inset;
+      box-shadow: 0 0 0 3px #858585 inset;
+    }
+
+    main section.dark:before {
+      content: "";
+      position: absolute;
+      width: 83%;
+      height: 83%;
+      background: #3e3e3e;
+      z-index: -1;
     }
 
     main section svg.saman #path16,
@@ -489,6 +499,17 @@
       const sectionsElement = document.querySelectorAll('main section');
       for (let i = 0; i < sectionsElement.length; i++) {
         const animateTypeElement = sectionsElement[i].querySelectorAll('.animation-type-container span');
+        const lightDarkElement = sectionsElement[i].querySelector('.light-dark')
+        lightDarkElement.addEventListener('click', (event) => {
+          console.log('lll', event.target);
+          if (event.target.textContent.indexOf('Light') !== -1) {
+            event.target.parentNode.classList.add('dark');
+            event.target.textContent = "Dark";
+          } else {
+            event.target.parentNode.classList.remove('dark');
+            event.target.textContent = "Light";
+          }
+        })
         for (let k = 0; k < animateTypeElement.length; k++) {
           animateTypeElement[k].addEventListener('click', (event) => {
             for (let j = 0; j < animateTypeElement.length; j++) {
