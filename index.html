@@ -14,12 +14,13 @@
 
     body {
       background-color: #e7e7e7;
+      font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
 
     main {
       margin: 1em;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
     }
 
     main section {
@@ -37,6 +38,17 @@
       height: 200px;
     }
 
+    main section .light-dark {
+      font-size: 14px;
+      color: #626262;
+      position: absolute;
+      left: 25px;
+      background: #e7e7e7;
+      padding: 4px 8px;
+      cursor: pointer;
+      bottom: -10px;
+    }
+
     main section .refresh {
       position: absolute;
       cursor: pointer;
@@ -44,8 +56,7 @@
       height: 45px;
       bottom: -25px;
       background-color: #e7e7e7;
-      right: 0;
-      left: 0;
+      right: 25px;
       margin: auto;
     }
 
@@ -334,6 +345,9 @@
           </g>
         </g>
       </svg>
+      <div class="light-dark">
+        Light
+      </div>
       <div class="animation-type-container">
         <span class="active">1</span>
         <span>2</span>
@@ -443,6 +457,9 @@
               d="m 2732.28,4453.77 h 157.7 c 177.41,0 604.51,-85.43 604.51,-505.95 v -170.84 h -203.7 l -0.09,132.92 c 0,149.62 -107.22,344.55 -407.29,344.55 h -151.13 v 199.32" />
           </g>
       </svg>
+      <div class="light-dark">
+        Light
+      </div>
       <div class="animation-type-container">
         <span class="active">1</span>
         <span>2</span>
