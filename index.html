@@ -18,9 +18,11 @@
     }
 
     main {
-      margin: 1em;
+      height: 100vh;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
     }
 
     main section {
@@ -31,6 +33,19 @@
       width: 250px;
       border: 1px solid #a3a3a3;
       position: relative;
+    }
+
+    main section:before {
+      content: "";
+      position: absolute;
+      width: 83%;
+      height: 83%;
+      background: #3e3e3e;
+      box-shadow: 0 0 14px -5px #000 inset, 2px 2px 0 0px #c3c3c3;
+      z-index: -1;
+      border-radius: 3px;
+      opacity: 0;
+      transition: opacity 150ms;
     }
 
     main section>svg {
@@ -86,6 +101,7 @@
 
     main section .animation-type-container span {
       box-shadow: 0 0 0 1px #a3a3a3 inset;
+      color: #626262;
       width: 18px;
       height: 18px;
       display: flex;
@@ -93,22 +109,19 @@
       justify-content: center;
       margin: 0 4px;
       font-size: 11px;
-      font-weight: 600;
+      font-weight: 200;
       cursor: pointer;
       transition: all 150ms;
     }
 
     main section .animation-type-container span.active {
       box-shadow: 0 0 0 3px #858585 inset;
+      font-weight: 600;
+      color: #000000;
     }
 
     main section.dark:before {
-      content: "";
-      position: absolute;
-      width: 83%;
-      height: 83%;
-      background: #3e3e3e;
-      z-index: -1;
+      opacity: 1;
     }
 
     main section svg.saman #path16,
@@ -130,12 +143,17 @@
       fill: transparent;
       stroke: transparent;
       fill: #024b8f;
+      transform: translate3d(300px, 0px, 0px);
       stroke-width: 40px;
       stroke-dasharray: 800px;
       stroke-dashoffset: 0px;
       stroke-linecap: round;
       animation-duration: 600ms;
       animation-iteration-count: 1;
+    }
+
+    main section.dark svg.saman #path22 {
+      fill: #fff;
     }
 
     main section svg.saman.animate #path16,
