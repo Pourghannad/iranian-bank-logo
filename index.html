@@ -165,6 +165,9 @@
     main section svg.saman.animate #path22 {
       animation-name: samanLogoType;
     }
+    main section.dark svg.saman.animate #path22 {
+      animation-name: samanLogoTypeDark;
+    }
 
     @keyframes samanLogoType {
       0% {
@@ -183,6 +186,27 @@
         stroke-dashoffset: 0px;
         stroke-dasharray: 0px;
         fill: #024b8f;
+        stroke: transparent;
+      }
+    }
+
+    @keyframes samanLogoTypeDark {
+      0% {
+        fill: transparent;
+        stroke: #ffffff;
+        stroke-dashoffset: 0px;
+      }
+
+      50% {
+        fill: transparent;
+        stroke: #ffffff;
+        stroke-dashoffset: 5500px;
+      }
+
+      100% {
+        stroke-dashoffset: 0px;
+        stroke-dasharray: 0px;
+        fill: #ffffff;
         stroke: transparent;
       }
     }
