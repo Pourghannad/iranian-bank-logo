@@ -203,7 +203,7 @@
               animateTypeElement[j].parentNode.parentElement.removeAttribute("class");
             }
             event.target.classList.add('active');
-            event.target.parentNode.parentElement.classList.add(`animate-${event.target.textContent}-type`);
+            event.target.parentNode.parentElement.classList.add(`animate-${event.target.textContent}-${event.target.parentNode.parentElement.querySelector('svg').classList[0]}`);
           })
         }
       }
