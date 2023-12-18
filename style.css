@@ -151,7 +151,7 @@ main section.dark svg.saman #path22 {
 main section svg.saman.animate #path16,
 main section svg.saman.animate #path18,
 main section svg.saman.animate #path20 {
-  animation-name: samanTwo;
+  animation-name: samanOne;
 }
 
 main section svg.saman.animate #path22 {
@@ -160,6 +160,12 @@ main section svg.saman.animate #path22 {
 
 main section.dark svg.saman.animate #path22 {
   animation-name: samanLogoTypeDark;
+}
+
+main section.animate-2-saman svg.saman.animate #path16,
+main section.animate-2-saman svg.saman.animate #path18,
+main section.animate-2-saman svg.saman.animate #path20 {
+  animation-name: samanTwo;
 }
 
 @keyframes samanLogoType {
