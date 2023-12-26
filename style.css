@@ -363,3 +363,11 @@ main section.dark svg.dey .dey-logo-type {
     transform: skewX(0deg);
   }
 }
+
+main section.animate-2-dey svg.dey.animate .deyOne,
+main section.animate-2-dey svg.dey.animate .deyTwo {
+  animation-name: deyTwo;
+}
+main section.animate-2-dey svg.dey.animate .deyOne {
+  animation-delay: 50ms;
+}
