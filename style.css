@@ -246,7 +246,7 @@ main section svg.dey .dey-logo-type {
 }
 
 main section svg.dey.animate .deyOne {
-  animation-name: deyTwo;
+  animation-name: deyOne;
 }
 
 main section svg.dey.animate .deyTwo,
@@ -294,7 +294,7 @@ main section.dark svg.dey .dey-logo-type {
   fill: #fff !important;
 }
 
-@keyframes deyOne {
+@keyframes deyTwo {
   0% {
     opacity: 0;
   }
@@ -336,7 +336,7 @@ main section.dark svg.dey .dey-logo-type {
   }
 }
 
-@keyframes deyTwo {
+@keyframes deyOne {
   0% {
     transform: skewX(0deg);
   }
@@ -368,6 +368,7 @@ main section.animate-2-dey svg.dey.animate .deyOne,
 main section.animate-2-dey svg.dey.animate .deyTwo {
   animation-name: deyTwo;
 }
+
 main section.animate-2-dey svg.dey.animate .deyOne {
-  animation-delay: 50ms;
+  animation-delay: 60ms;
 }
