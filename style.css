@@ -132,7 +132,6 @@ main section svg.saman #path20 {
 }
 
 main section svg.saman #path22 {
-  fill: transparent;
   stroke: transparent;
   fill: #024b8f;
   transform: translate3d(300px, 0px, 0px);
@@ -401,4 +400,39 @@ main section.animate-3-dey svg.dey.animate .deyTwo {
 
 main section.animate-3-dey svg.dey.animate .deyOne {
   animation-delay: 60ms;
+}
+
+main section svg.en-bank.animate path:nth-of-type(3) {
+  animation-name: enBankOne;
+  animation-duration: 200ms;
+}
+
+main section svg.en-bank.animate path:nth-of-type(5) {
+  animation-name: enBankTwo;
+  animation-duration: 200ms;
+  animation-delay: 50ms;
+}
+
+@keyframes enBankOne {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  50% {
+    transform: translate3d(0px, 5000px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+
+@keyframes enBankTwo {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  50% {
+    transform: translate3d(0px, -5000px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+  }
 }
