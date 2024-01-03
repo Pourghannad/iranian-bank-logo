@@ -470,3 +470,13 @@ main section.animate-2-en-bank svg.en-bank.animate path:nth-of-type(5) {
     transform: skewX(0deg);
   }
 }
+
+@media screen and (max-width: 500px) {
+  main {
+    flex-wrap: wrap;
+    gap: 55px 0px;
+    padding: 50px 0px;
+    min-height: 100vh;
+    height: auto;
+  }
+}
