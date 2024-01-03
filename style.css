@@ -21,8 +21,8 @@ main section {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 250px;
-  width: 250px;
+  height: 290px;
+  width: 290px;
   border: 1px solid #a3a3a3;
   position: relative;
 }
@@ -41,19 +41,33 @@ main section:before {
 }
 
 main section > svg {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
 }
 
 main section .light-dark {
   font-size: 14px;
   color: #626262;
   position: absolute;
-  left: 25px;
+  left: 14px;
   background: #e7e7e7;
   padding: 4px 8px;
   cursor: pointer;
   bottom: -10px;
+}
+
+main section .code {
+  font-size: 14px;
+  color: #626262;
+  position: absolute;
+  left: 50%;
+  transform: translate3d(-50%, 0px, 0px);
+  background: #e7e7e7;
+  padding: 4px 8px;
+  cursor: pointer;
+  bottom: -13px;
+  margin: auto;
+  display: none;
 }
 
 main section .refresh {
@@ -63,7 +77,7 @@ main section .refresh {
   height: 45px;
   bottom: -25px;
   background-color: #e7e7e7;
-  right: 25px;
+  right: 14px;
   margin: auto;
 }
 
@@ -471,9 +485,9 @@ main section.animate-2-en-bank svg.en-bank.animate path:nth-of-type(5) {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   main {
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 55px 0px;
     padding: 50px 0px;
     min-height: 100vh;
