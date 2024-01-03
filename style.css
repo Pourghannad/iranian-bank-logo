@@ -21,8 +21,8 @@ main section {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 290px;
-  width: 290px;
+  height: 305px;
+  width: 305px;
   border: 1px solid #a3a3a3;
   position: relative;
 }
@@ -41,8 +41,8 @@ main section:before {
 }
 
 main section > svg {
-  width: 250px;
-  height: 250px;
+  width: 275px;
+  height: 275px;
 }
 
 main section .light-dark {
