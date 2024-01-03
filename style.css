@@ -436,3 +436,37 @@ main section svg.en-bank.animate path:nth-of-type(5) {
     transform: translate3d(0px, 0px, 0px);
   }
 }
+
+main section.animate-2-en-bank svg.en-bank.animate path:nth-of-type(1) {
+  animation-name: enBankTypeTwoOne;
+  animation-duration: 200ms;
+}
+
+main section.animate-2-en-bank svg.en-bank.animate path:nth-of-type(2) {
+  animation-name: enBankTypeTwoOne;
+  animation-duration: 200ms;
+  animation-delay: 50ms;
+}
+main section.animate-2-en-bank svg.en-bank.animate path:nth-of-type(3) {
+  animation-name: unset;
+}
+main section.animate-2-en-bank svg.en-bank.animate path:nth-of-type(4) {
+  animation-name: enBankTypeTwoOne;
+  animation-duration: 200ms;
+  animation-delay: 75ms;
+}
+main section.animate-2-en-bank svg.en-bank.animate path:nth-of-type(5) {
+  animation-name: unset;
+}
+
+@keyframes enBankTypeTwoOne {
+  0% {
+    transform: skewX(0deg);
+  }
+  50% {
+    transform: skewX(20deg);
+  }
+  100% {
+    transform: skewX(0deg);
+  }
+}
