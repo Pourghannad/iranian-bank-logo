@@ -86,7 +86,7 @@ main section .code-container {
   width: 364px;
   height: 300px;
   overflow: scroll;
-  background: #fff;
+  background-color: #f0f0f0;
   top: 50%;
   left: 50%;
   transform: translate3d(-50%, -50%, 0px);
