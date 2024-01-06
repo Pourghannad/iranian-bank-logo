@@ -67,18 +67,31 @@ main section .code {
   cursor: pointer;
   bottom: -13px;
   margin: auto;
-  display: none;
 }
 
 main section .refresh {
   position: absolute;
   cursor: pointer;
-  width: 45px;
-  height: 45px;
-  bottom: -25px;
+  width: 35px;
+  height: 35px;
+  bottom: -20px;
   background-color: #e7e7e7;
   right: 14px;
   margin: auto;
+}
+
+main section .code-container {
+  position: fixed;
+  z-index: 2;
+  width: 364px;
+  height: 300px;
+  overflow: scroll;
+  background: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0px);
+  box-shadow: 0 0 0px 2px, 0 0 70px 0px #b5b5b5;
+  padding: 30px;
 }
 
 main section .refresh:before {
