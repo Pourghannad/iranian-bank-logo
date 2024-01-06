@@ -92,6 +92,15 @@ main section .code-container {
   transform: translate3d(-50%, -50%, 0px);
   box-shadow: 0 0 0px 2px, 0 0 70px 0px #b5b5b5;
   padding: 30px;
+  transition-duration: 200ms;
+  transition-property: opacity, visibility;
+  visibility: hidden;
+  opacity: 0;
+}
+
+main section .code-container.active {
+  visibility: visible;
+  opacity: 1;
 }
 
 main section .refresh:before {
