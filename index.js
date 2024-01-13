@@ -38,8 +38,17 @@ document.addEventListener("DOMContentLoaded", () => {
       event.target.parentNode
         .querySelector(".code-container")
         .classList.add("active");
+      document.getElementById("modal-cover").classList.add("active");
       event.target.parentNode.querySelector(".code-container code").innerHTML =
-        ElementCode.saman[0].code;
+        ElementCode.saman[0][
+          `code_${
+            event.target.parentNode
+              .querySelector(".light-dark")
+              .textContent.indexOf("Light") === -1
+              ? "dark"
+              : "light"
+          }`
+        ];
     });
   }
   for (let i = 0; i < animateElement.length; i++) {
@@ -54,4 +63,8 @@ document.addEventListener("DOMContentLoaded", () => {
       event.target.parentNode.querySelector("svg").classList.add("animate");
     });
   }
+  document.querySelector("#modal-cover").addEventListener("click", (event) => {
+    event.target.classList.remove("active");
+    document.querySelector(".code-container.active").classList.remove("active");
+  });
 });

@@ -516,3 +516,18 @@ main section.animate-2-en-bank svg.en-bank.animate path:nth-of-type(5) {
     height: auto;
   }
 }
+
+#modal-cover {
+  position: fixed;
+  background-color: rgb(164 164 164 / 80%);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#modal-cover.active {
+  opacity: 1;
+  visibility: visible;
+}
