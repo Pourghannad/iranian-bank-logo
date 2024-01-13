@@ -38,6 +38,8 @@ document.addEventListener("DOMContentLoaded", () => {
       event.target.parentNode
         .querySelector(".code-container")
         .classList.add("active");
+      event.target.parentNode.querySelector(".code-container code").innerHTML =
+        ElementCode.saman[0].code;
     });
   }
   for (let i = 0; i < animateElement.length; i++) {
