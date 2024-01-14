@@ -35,12 +35,16 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
     codeElement.addEventListener("click", (event) => {
+      const itemName = event.target.parentNode
+        .querySelector("svg")
+        .getAttribute("class")
+        .split(" ")[0];
       event.target.parentNode
         .querySelector(".code-container")
         .classList.add("active");
       document.getElementById("modal-cover").classList.add("active");
       event.target.parentNode.querySelector(".code-container code").innerHTML =
-        ElementCode.saman[0][
+        ElementCode[itemName][0][
           `code_${
             event.target.parentNode
               .querySelector(".light-dark")

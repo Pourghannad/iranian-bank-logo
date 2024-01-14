@@ -30,7 +30,7 @@ main section {
 main section:before {
   content: "";
   position: absolute;
-  width: 83%;
+  width: 90%;
   height: 83%;
   background: #3e3e3e;
   box-shadow: 0 0 14px -5px #000 inset, 2px 2px 0 0px #c3c3c3;
