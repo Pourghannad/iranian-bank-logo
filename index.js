@@ -35,6 +35,10 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
     codeElement.addEventListener("click", (event) => {
+      const itemTypeNumber =
+        event.target.parentNode.getAttribute("class") === null
+          ? 0
+          : event.target.parentNode.getAttribute("class").split("-")[1] * 1 - 1;
       const itemName = event.target.parentNode
         .querySelector("svg")
         .getAttribute("class")
@@ -44,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .classList.add("active");
       document.getElementById("modal-cover").classList.add("active");
       event.target.parentNode.querySelector(".code-container code").innerHTML =
-        ElementCode[itemName][0][
+        ElementCode[itemName][itemTypeNumber][
           `code_${
             event.target.parentNode
               .querySelector(".light-dark")
