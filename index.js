@@ -36,7 +36,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     codeElement.addEventListener("click", (event) => {
       const itemTypeNumber =
-        event.target.parentNode.getAttribute("class") === null
+        event.target.parentNode.getAttribute("class") === null ||
+        event.target.parentNode.getAttribute("class").split("-").length === 1
           ? 0
           : event.target.parentNode.getAttribute("class").split("-")[1] * 1 - 1;
       const itemName = event.target.parentNode
