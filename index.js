@@ -10,10 +10,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const codeElement = sectionsElement[i].querySelector(".code");
     lightDarkElement.addEventListener("click", (event) => {
       if (event.target.textContent.indexOf("Light") !== -1) {
-        event.target.parentNode.classList.add("dark");
+        event.target.parentNode
+          .querySelector(".dark-overlay")
+          .classList.add("dark");
         event.target.textContent = "Dark";
       } else {
-        event.target.parentNode.classList.remove("dark");
+        event.target.parentNode
+          .querySelector(".dark-overlay")
+          .classList.remove("dark");
         event.target.textContent = "Light";
       }
     });

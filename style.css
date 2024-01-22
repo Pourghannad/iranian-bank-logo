@@ -27,11 +27,16 @@ main section {
   position: relative;
 }
 
-main section:before {
+main section .dark-overlay {
+  width: 90%;
+}
+
+main section .dark-overlay:before {
   content: "";
   position: absolute;
   width: 90%;
   height: 83%;
+  top: 22px;
   background: #3e3e3e;
   box-shadow: 0 0 14px -5px #000 inset, 2px 2px 0 0px #c3c3c3;
   z-index: -1;
@@ -148,7 +153,7 @@ main section .animation-type-container span.active {
   color: #000000;
 }
 
-main section.dark:before {
+main section .dark:before {
   opacity: 1;
 }
 
@@ -179,7 +184,7 @@ main section svg.saman #path22 {
   animation-iteration-count: 1;
 }
 
-main section.dark svg.saman #path22 {
+main section .dark svg.saman #path22 {
   fill: #fff;
 }
 
@@ -193,7 +198,7 @@ main section svg.saman.animate #path22 {
   animation-name: samanLogoType;
 }
 
-main section.dark svg.saman.animate #path22 {
+main section .dark svg.saman.animate #path22 {
   animation-name: samanLogoTypeDark;
 }
 
@@ -325,7 +330,7 @@ main section svg.dey .dey-logo-type:nth-of-type(11) {
   animation-delay: 225ms;
 }
 
-main section.dark svg.dey .dey-logo-type {
+main section .dark svg.dey .dey-logo-type {
   fill: #fff !important;
 }
 
