@@ -249,7 +249,7 @@ const ElementCode = {
                     &lt;/g>
                   &lt;/g>
                 &lt;/svg>&lt;/div>`,
-      code_dark: `&lt;div class="svg-icon svg-light">    &lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1250 1050" xml:space="preserve" version="1.1"
+      code_dark: `&lt;div class="svg-icon svg-dark">    &lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1250 1050" xml:space="preserve" version="1.1"
                   class="saman animate">
                   &lt;style>
                     #path16,
