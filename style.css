@@ -71,6 +71,7 @@ main section .code {
   padding: 4px 8px;
   cursor: pointer;
   bottom: -13px;
+  visibility: hidden;
   margin: auto;
 }
 

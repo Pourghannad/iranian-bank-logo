@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     for (let k = 0; k < animateTypeElement.length; k++) {
       animateTypeElement[k].addEventListener("click", (event) => {
+        event.target.parentElement.parentElement.querySelector("svg").classList.add("animate")
         for (let j = 0; j < animateTypeElement.length; j++) {
           animateTypeElement[j].classList.remove("active");
           animateTypeElement[j].parentNode.parentElement.removeAttribute(
