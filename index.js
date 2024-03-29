@@ -49,12 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .querySelector("svg")
         .getAttribute("class")
         .split(" ")[0];
-      event.target.parentNode
-        .querySelector(".code-container")
-        .classList.add("active");
-      document.getElementById("modal-cover").classList.add("active");
-      event.target.parentNode.querySelector(".code-container code").innerHTML =
-        ElementCode[itemName][itemTypeNumber][
+        navigator.clipboard.writeText(ElementCode[itemName][itemTypeNumber][
           `code_${
             event.target.parentNode
               .querySelector(".light-dark")
@@ -62,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
               ? "dark"
               : "light"
           }`
-        ];
+        ]);
     });
   }
   for (let i = 0; i < animateElement.length; i++) {
@@ -77,8 +72,4 @@ document.addEventListener("DOMContentLoaded", () => {
       event.target.parentNode.querySelector("svg").classList.add("animate");
     });
   }
-  document.querySelector("#modal-cover").addEventListener("click", (event) => {
-    event.target.classList.remove("active");
-    document.querySelector(".code-container.active").classList.remove("active");
-  });
 });
