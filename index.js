@@ -58,6 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
               : "light"
           }`
         ]);
+        
     });
   }
   for (let i = 0; i < animateElement.length; i++) {
