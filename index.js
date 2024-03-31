@@ -58,6 +58,11 @@ document.addEventListener("DOMContentLoaded", () => {
               : "light"
           }`
         ]);
+        const toastEl = document.getElementById("toast");
+        toastEl.classList.add("active");
+        setTimeout(() => {
+          toastEl.classList.remove("active");
+        }, 900);
         
     });
   }

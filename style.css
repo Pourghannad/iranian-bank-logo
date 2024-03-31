@@ -503,4 +503,15 @@ main section.animate-2-en-bank svg.en-bank.animate path:nth-of-type(5) {
   visibility: hidden;
   opacity: 0;
   position: fixed;
+  z-index: 1;
+  background-color: #d1d1d1;
+  padding: 12px;
+  box-shadow: 0 0 0 1px #aeaeae;
+  text-transform: capitalize;
+  transition: all 150ms;
+}
+
+#toast.active {
+  visibility: visible;
+  opacity: 1;
 }
