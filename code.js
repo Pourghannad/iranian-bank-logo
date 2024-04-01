@@ -2,74 +2,75 @@ const ElementCode = {
   saman: [
     {
       key: 1,
-      code_light: `<div class="svg-icon svg-light"> 
+      code_light: `
+      <style>
+      #path16,
+      #path18,
+      #path20 {
+        animation-name: samanOne;
+        animation-duration: 200ms;
+        animation-iteration-count: 2;
+      }
+  
+      #path18 {
+        animation-delay: 100ms;
+      }
+  
+      #path20 {
+        animation-delay: 50ms;
+      }
+  
+      #path22 {
+        animation-name: samanLogoType;
+        stroke: transparent;
+        fill: #024b8f;
+        transform: translate3d(300px, 0px, 0px);
+        stroke-width: 40px;
+        stroke-dasharray: 800px;
+        stroke-dashoffset: 0px;
+        stroke-linecap: round;
+        animation-duration: 600ms;
+        animation-iteration-count: 1;
+      }
+  
+      @keyframes samanOne {
+        0% {
+          transform: rotate3d(1, 0, 0, 0deg);
+        }
+  
+        50% {
+          transform: rotate3d(1, 0, 0, 10deg);
+        }
+  
+        100% {
+          transform: rotate3d(1, 0, 0, 0deg);
+        }
+      }
+  
+      @keyframes samanLogoType {
+        0% {
+          fill: transparent;
+          stroke: #024b8f;
+          stroke-dashoffset: 0px;
+        }
+  
+        50% {
+          fill: transparent;
+          stroke: #024b8f;
+          stroke-dashoffset: 5500px;
+        }
+  
+        100% {
+          stroke-dashoffset: 0px;
+          stroke-dasharray: 0px;
+          fill: #024b8f;
+          stroke: transparent;
+        }
+      }
+    </style>
+      <div class="svg-icon svg-light"> 
        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1250 1050" xml:space="preserve" version="1.1"
                   class="saman animate">
-                  <style>
-                    #path16,
-                    #path18,
-                    #path20 {
-                      animation-name: samanOne;
-                      animation-duration: 200ms;
-                      animation-iteration-count: 2;
-                    }
-                
-                    #path18 {
-                      animation-delay: 100ms;
-                    }
-                
-                    #path20 {
-                      animation-delay: 50ms;
-                    }
-                
-                    #path22 {
-                      animation-name: samanLogoType;
-                      stroke: transparent;
-                      fill: #024b8f;
-                      transform: translate3d(300px, 0px, 0px);
-                      stroke-width: 40px;
-                      stroke-dasharray: 800px;
-                      stroke-dashoffset: 0px;
-                      stroke-linecap: round;
-                      animation-duration: 600ms;
-                      animation-iteration-count: 1;
-                    }
-                
-                    @keyframes samanOne {
-                      0% {
-                        transform: rotate3d(1, 0, 0, 0deg);
-                      }
-                
-                      50% {
-                        transform: rotate3d(1, 0, 0, 10deg);
-                      }
-                
-                      100% {
-                        transform: rotate3d(1, 0, 0, 0deg);
-                      }
-                    }
-                
-                    @keyframes samanLogoType {
-                      0% {
-                        fill: transparent;
-                        stroke: #024b8f;
-                        stroke-dashoffset: 0px;
-                      }
-                
-                      50% {
-                        fill: transparent;
-                        stroke: #024b8f;
-                        stroke-dashoffset: 5500px;
-                      }
-                
-                      100% {
-                        stroke-dashoffset: 0px;
-                        stroke-dasharray: 0px;
-                        fill: #024b8f;
-                        stroke: transparent;
-                      }
-                    }
-                  </style>
                   <g transform="matrix(1.3333333,0,0,-1.3333333,0,1461.3333)" id="g10">
                     <g transform="scale(0.1)" id="g12">
                       <path id="path16" style=" fill: #7cd0f5; fill-opacity: 1; fill-rule: nonzero; stroke: none; "
@@ -84,74 +85,75 @@ const ElementCode = {
                   </g>
                 </svg>
                 </div>`,
-      code_dark: `<div class="svg-icon svg-dark">    
+      code_dark: `
+      <style>
+      #path16,
+      #path18,
+      #path20 {
+        animation-name: samanOne;
+        animation-duration: 200ms;
+        animation-iteration-count: 2;
+      }
+  
+      #path18 {
+        animation-delay: 100ms;
+      }
+  
+      #path20 {
+        animation-delay: 50ms;
+      }
+  
+      #path22 {
+        animation-name: samanLogoTypeDark;
+        stroke: transparent;
+        fill: #ffffff;
+        transform: translate3d(300px, 0px, 0px);
+        stroke-width: 40px;
+        stroke-dasharray: 800px;
+        stroke-dashoffset: 0px;
+        stroke-linecap: round;
+        animation-duration: 600ms;
+        animation-iteration-count: 1;
+      }
+  
+      @keyframes samanOne {
+        0% {
+          transform: rotate3d(1, 0, 0, 0deg);
+        }
+  
+        50% {
+          transform: rotate3d(1, 0, 0, 10deg);
+        }
+  
+        100% {
+          transform: rotate3d(1, 0, 0, 0deg);
+        }
+      }
+  
+      @keyframes samanLogoTypeDark {
+          0% {
+              fill: transparent;
+              stroke: #ffffff;
+              stroke-dashoffset: 0px;
+          }
+
+          50% {
+              fill: transparent;
+              stroke: #ffffff;
+              stroke-dashoffset: 5500px;
+          }
+
+          100% {
+              stroke-dashoffset: 0px;
+              stroke-dasharray: 0px;
+              fill: #ffffff;
+              stroke: transparent;
+          }
+      }
+    </style>
+      <div class="svg-icon svg-dark">    
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1250 1050" xml:space="preserve" version="1.1"
                   class="saman animate">
-                  <style>
-                    #path16,
-                    #path18,
-                    #path20 {
-                      animation-name: samanOne;
-                      animation-duration: 200ms;
-                      animation-iteration-count: 2;
-                    }
-                
-                    #path18 {
-                      animation-delay: 100ms;
-                    }
-                
-                    #path20 {
-                      animation-delay: 50ms;
-                    }
-                
-                    #path22 {
-                      animation-name: samanLogoTypeDark;
-                      stroke: transparent;
-                      fill: #ffffff;
-                      transform: translate3d(300px, 0px, 0px);
-                      stroke-width: 40px;
-                      stroke-dasharray: 800px;
-                      stroke-dashoffset: 0px;
-                      stroke-linecap: round;
-                      animation-duration: 600ms;
-                      animation-iteration-count: 1;
-                    }
-                
-                    @keyframes samanOne {
-                      0% {
-                        transform: rotate3d(1, 0, 0, 0deg);
-                      }
-                
-                      50% {
-                        transform: rotate3d(1, 0, 0, 10deg);
-                      }
-                
-                      100% {
-                        transform: rotate3d(1, 0, 0, 0deg);
-                      }
-                    }
-                
-                    @keyframes samanLogoTypeDark {
-                        0% {
-                            fill: transparent;
-                            stroke: #ffffff;
-                            stroke-dashoffset: 0px;
-                        }
-
-                        50% {
-                            fill: transparent;
-                            stroke: #ffffff;
-                            stroke-dashoffset: 5500px;
-                        }
-
-                        100% {
-                            stroke-dashoffset: 0px;
-                            stroke-dasharray: 0px;
-                            fill: #ffffff;
-                            stroke: transparent;
-                        }
-                    }
-                  </style>
                   <g transform="matrix(1.3333333,0,0,-1.3333333,0,1461.3333)" id="g10">
                     <g transform="scale(0.1)" id="g12">
                       <path id="path16" style=" fill: #7cd0f5; fill-opacity: 1; fill-rule: nonzero; stroke: none; "
