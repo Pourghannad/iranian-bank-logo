@@ -49,20 +49,24 @@ document.addEventListener("DOMContentLoaded", () => {
         .querySelector("svg")
         .getAttribute("class")
         .split(" ")[0];
-        navigator.clipboard.writeText(ElementCode[itemName][itemTypeNumber][
-          `code_${
-            event.target.parentNode
-              .querySelector(".light-dark")
-              .textContent.indexOf("Light") === -1
-              ? "dark"
-              : "light"
-          }`
-        ]);
-        const toastEl = document.getElementById("toast");
-        toastEl.classList.add("active");
-        setTimeout(() => {
-          toastEl.classList.remove("active");
-        }, 900);
+        try {
+          navigator.clipboard.writeText(ElementCode[itemName][itemTypeNumber][
+            `code_${
+              event.target.parentNode
+                .querySelector(".light-dark")
+                .textContent.indexOf("Light") === -1
+                ? "dark"
+                : "light"
+            }`
+          ]);
+          const toastEl = document.getElementById("toast");
+          toastEl.classList.add("active");
+          setTimeout(() => {
+            toastEl.classList.remove("active");
+          }, 900);
+        } catch (error) {
+          alert("error");
+        }
         
     });
   }
