@@ -692,11 +692,15 @@ const ElementCode = {
                 animation-iteration-count: 2;
               }
 
-              svg.dey.animate .deyOne {
-                animation-name: deyOne;
+              svg.dey.animate .deyOne,
+              svg.dey.animate .deyTwo {
+                animation-name: deyTwo;
               }
 
-              svg.dey.animate .deyTwo,
+              svg.dey.animate .deyOne {
+                animation-delay: 60ms;
+              }
+              
               svg.dey.animate .dey-logo-type {
                 animation-name: deyTwoPath2;
               }
@@ -737,19 +741,6 @@ const ElementCode = {
                 animation-delay: 225ms;
               }
 
-              @keyframes deyOne {
-                0% {
-                  transform: skewX(0deg);
-                }
-
-                50% {
-                  transform: skewX(5deg);
-                }
-
-                100% {
-                  transform: skewX(0deg);
-                }
-              }
               @keyframes deyTwoPath2 {
                 0% {
                   transform: skewX(0deg);
@@ -761,6 +752,47 @@ const ElementCode = {
 
                 100% {
                   transform: skewX(0deg);
+                }
+              }
+              @keyframes deyTwo {
+                0% {
+                  opacity: 0;
+                }
+              
+                10% {
+                  opacity: 0.1;
+                }
+              
+                20% {
+                  opacity: 0.8;
+                }
+              
+                25% {
+                  opacity: 1;
+                }
+              
+                30% {
+                  opacity: 0.2;
+                }
+              
+                33% {
+                  opacity: 1;
+                }
+              
+                50% {
+                  opacity: 0;
+                }
+              
+                60% {
+                  opacity: 0.2;
+                }
+              
+                90% {
+                  opacity: 0.3;
+                }
+              
+                100% {
+                  opacity: 1;
                 }
               }
 
