@@ -9,16 +9,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const lightDarkElement = sectionsElement[i].querySelector(".light-dark");
     const codeElement = sectionsElement[i].querySelector(".code");
     lightDarkElement.addEventListener("click", (event) => {
-      if (event.target.textContent.indexOf("Light") !== -1) {
+      if (event.target.textContent.indexOf("Dark") !== -1) {
         event.target.parentNode
           .querySelector(".dark-overlay")
           .classList.add("dark");
-        event.target.textContent = "Dark";
+        event.target.textContent = "Light";
       } else {
         event.target.parentNode
           .querySelector(".dark-overlay")
           .classList.remove("dark");
-        event.target.textContent = "Light";
+        event.target.textContent = "Dark";
       }
     });
     for (let k = 0; k < animateTypeElement.length; k++) {
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
             `code_${
               event.target.parentNode
                 .querySelector(".light-dark")
-                .textContent.indexOf("Light") === -1
+                .textContent.indexOf("Dark") === -1
                 ? "dark"
                 : "light"
             }`
