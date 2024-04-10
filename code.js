@@ -1090,5 +1090,199 @@ const ElementCode = {
           </g>
       </svg></div>`
     },
+    {
+      key: 3,
+      code_light: `
+      <div class="svg-icon svg-light"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1250 1050" xml:space="preserve"
+      version="1.1" class="dey animate">
+      <style>
+        svg.dey .deyOne,
+        svg.dey .deyTwo,
+        svg.dey .dey-logo-type {
+          animation-duration: 200ms;
+          animation-iteration-count: 2;
+        }
+
+        svg.dey .deyOne,
+        svg.dey .deyTwo {
+          animation-name: deyThree;
+        }
+
+        @keyframes deyThree {
+          0% {
+            transform: scale3d(1, 1, 1);
+          }
+          50% {
+            transform: scale3d(1, 1.25, 1);
+          }
+          60% {
+            transform: scale3d(1.1, 1.25, 1);
+          }
+          70% {
+            transform: scale3d(1.15, 1, 1);
+          }
+          80% {
+            transform: scale3d(1, 0.7, 1);
+          }
+          100% {
+            transform: scale3d(1, 1, 1);
+          }
+        }
+
+        main section.animate-3-dey svg.dey.animate .deyOne {
+          animation-delay: 60ms;
+        }
+
+        .svg-icon.svg-dark svg.dey .dey-logo-type {
+          fill: #fff !important;
+        }
+
+        svg.dey.animate .deyOne {
+          animation-delay: 60ms;
+        }
+
+        svg.dey.animate .dey-logo-type {
+          animation-name: deyTwoPath2;
+        }
+
+        svg.dey .dey-logo-type:nth-of-type(7) {
+          animation-delay: 25ms;
+        }
+
+        svg.dey .dey-logo-type:nth-of-type(10) {
+          animation-delay: 50ms;
+        }
+
+        svg.dey .dey-logo-type:nth-of-type(5) {
+          animation-delay: 75ms;
+        }
+
+        svg.dey .dey-logo-type:nth-of-type(6) {
+          animation-delay: 100ms;
+        }
+
+        svg.dey .dey-logo-type:nth-of-type(3) {
+          animation-delay: 125ms;
+        }
+
+        svg.dey .dey-logo-type:nth-of-type(8) {
+          animation-delay: 150ms;
+        }
+
+        svg.dey .dey-logo-type:nth-of-type(9) {
+          animation-delay: 175ms;
+        }
+
+        svg.dey .dey-logo-type:nth-of-type(4) {
+          animation-delay: 200ms;
+        }
+
+        svg.dey .dey-logo-type:nth-of-type(11) {
+          animation-delay: 225ms;
+        }
+
+        @keyframes deyTwoPath2 {
+          0% {
+            transform: skewX(0deg);
+          }
+
+          50% {
+            transform: skewX(-5deg);
+          }
+
+          100% {
+            transform: skewX(0deg);
+          }
+        }
+      </style>
+      <g transform="matrix(1.3333333,0,0,-1.3333333,80,1375)" id="g10">
+        <g transform="scale(0.1)" id="g12">
+          <path class="deyOne" style="
+            fill: #00899e;
+            fill-opacity: 1;
+            fill-rule: nonzero;
+            stroke: none;
+          "
+            d="m 5256.71,9333.59 c 338.61,188.7 737.07,314.81 1126.45,245.62 0,-157.77 6.87,-1154.67 6.87,-1154.67 -29.44,-22.33 -69.68,-14.23 -103.78,-22.33 -268.69,-49.31 -522.14,-159 -759.88,-291 -468.62,-265.23 -876.94,-625.17 -1240.06,-1019.98 -445.07,-502 -915.93,-992.95 -1481.74,-1360.52 -394.78,-255.9 -859.25,-434.53 -1336,-407.8 -382.75,35.84 -754.484,199.97 -1035.902,462.78 -250.77,235.06 -405.1055,569.44 -420.5547,912.48 -10.83986,97.66 -14.69924,175.08 -2.20705,269.16 26.50005,333.93 129.05075,676.96 362.63675,926.24 311.125,341.8 791.297,479.45 1242.027,473.06 625.93,-15.95 1204.73,-312.59 1694.71,-683.58 38.27,-13.98 8.84,-52.99 -5.64,-72.62 -75.57,-113.6 -146.97,-229.91 -223.27,-343.02 -368.54,255.17 -774.37,473.8 -1218.96,557.47 -265.73,47.6 -553.05,43.43 -797.43,-83.67 -306.71,-156.54 -497.113,-485.08 -538.812,-820.25 -22.824,-148.21 5.641,-299.83 70.168,-434.3 139.121,-295.9 417.604,-535.59 745.414,-586.64 135.69,-23.81 273.82,-4.17 407.05,24.03 258.36,45.16 508.88,136.93 731.92,275.3 243.4,150.15 452.69,349.4 639.17,565.06 283.87,331.5 517.46,702.23 734.86,1079.85 353.56,586.91 802.3,1142.15 1402.96,1489.33" />
+          <path class="deyTwo" style="
+            fill: #00899e;
+            fill-opacity: 1;
+            fill-rule: nonzero;
+            stroke: none;
+          "
+            d="m 6383.64,8380.37 c 400.92,32.39 827.86,-10.55 1174.59,-231.13 355,-219.59 581,-609.48 649.7,-1016.04 26.98,-109.93 15.21,-220.53 15.21,-334.43 -29.95,-398.23 -182.8,-800.84 -478.69,-1077.64 -255.68,-242.38 -603.84,-366.08 -950.79,-395.49 -324.14,-20.86 -645.55,62.79 -944.14,183 -595.5,246.37 -1127.45,625.19 -1611.78,1045.99 l -5.65,19.63 c 116.07,125.14 234.82,247.57 355.3,367.81 60.62,-38.89 134.68,-109.19 204.12,-158.51 351.6,-271.36 719.37,-526.06 1118.1,-724.06 149.43,-68.71 303.02,-138.87 467.91,-159.23 158.52,6.84 313.84,61.82 443.13,153.35 236.78,173.47 317.72,526.29 187.71,787.35 -122.95,233.34 -384.23,341.54 -627.16,401.41 0,78.16 2.44,1084.13 2.44,1137.99" />
+          <path class="dey-logo-type" style="
+            fill: #4b4b4b;
+            fill-opacity: 1;
+            fill-rule: nonzero;
+            stroke: none;
+          "
+            d="m 6150.88,3721.13 v -192.74 h 597.93 c 82.14,0 243.87,90.89 243.87,271.58 v 252.98 h -182.54 v -211.36 c 3.29,-62.42 -65.71,-120.46 -148.94,-120.46 h -510.32" />
+          <path class="dey-logo-type" style="
+            fill: #4b4b4b;
+            fill-opacity: 1;
+            fill-rule: nonzero;
+            stroke: none;
+          "
+            d="m 6724.72,3289.65 c 0,75 -60.81,135.8 -135.79,135.8 -75.02,0 -135.8,-60.8 -135.8,-135.8 0,-75 60.78,-135.79 135.8,-135.79 74.98,0 135.79,60.79 135.79,135.79" />
+          <path class="dey-logo-type" style="
+            fill: #4b4b4b;
+            fill-opacity: 1;
+            fill-rule: nonzero;
+            stroke: none;
+          "
+            d="m 5692.33,4115.37 c 0,75 -60.78,135.8 -135.79,135.8 -74.99,0 -135.8,-60.8 -135.8,-135.8 0,-75 60.81,-135.79 135.8,-135.79 75.01,0 135.79,60.79 135.79,135.79" />
+          <path class="dey-logo-type" style="
+            fill: #4b4b4b;
+            fill-opacity: 1;
+            fill-rule: nonzero;
+            stroke: none;
+          " d="m 6150.88,3799.97 h 210.26 v 919.91 h -210.26 v -919.91" />
+          <path class="dey-logo-type" style="
+            fill: #4b4b4b;
+            fill-opacity: 1;
+            fill-rule: nonzero;
+            stroke: none;
+          "
+            d="m 6006.32,4032.14 v -295.68 c -10.95,-109.51 -117.18,-190.96 -203.69,-190.55 h -444.62 l -504.85,511.42 c -22.28,26.66 -25.19,75.56 -1.1,105.13 4.52,5.54 541,557.42 541,557.42 h 261.73 l -586.99,-613.27 377.82,-395.34 279.26,1.1 c 76.66,0 125.94,54.76 125.94,99.65 v 221.22 l 155.5,-1.1" />
+          <path class="dey-logo-type" style="
+            fill: #4b4b4b;
+            fill-opacity: 1;
+            fill-rule: nonzero;
+            stroke: none;
+          "
+            d="m 5055.76,3718.93 175.22,-190.54 H 3934.35 c -79.94,0 -227.79,96.37 -227.79,234.35 v 267.21 h 170.84 v -210.26 c 0,-60.23 35.05,-105.14 96.37,-105.14 l 1081.99,4.38" />
+          <path class="dey-logo-type" style="
+            fill: #4b4b4b;
+            fill-opacity: 1;
+            fill-rule: nonzero;
+            stroke: none;
+          " d="m 2726.8,3713.08 -131.42,-184.69 h 870.26 c 0,0 34.5,61.32 30.66,184.69 h -769.5" />
+          <path class="dey-logo-type" style="
+            fill: #4b4b4b;
+            fill-opacity: 1;
+            fill-rule: nonzero;
+            stroke: none;
+          "
+            d="m 2072.64,4676.79 c -108.41,-5.1 -219.02,-100.37 -219.02,-201.5 v -186.9 c 0,0 168.2,-2.15 176.31,0 26.45,6.99 -34.82,217.75 100.75,212.59 l 239.83,0.97 v 174.84 h -297.87" />
+          <path class="dey-logo-type" style="
+            fill: #4b4b4b;
+            fill-opacity: 1;
+            fill-rule: nonzero;
+            stroke: none;
+          "
+            d="m 2359.65,4185.37 c 83.06,0 280.35,-67.81 280.35,-295.59 0,-394.25 -269.49,-370.24 -269.49,-370.24 0,0 -820.9,0 -862.95,0 -141.23,0 -256.35,111.79 -254.07,193.61 l -13.14,564.39 h 170.84 c 0,0 -0.35,-385.49 0,-405.29 1.05,-74.47 27.34,-157.7 116.17,-159.1 24.35,-0.53 792.69,-6.65 821.25,0 28.56,6.49 120.55,32.07 118.28,139.3 -2.11,105.14 -48.19,140.18 -107.24,142.46 -28.56,1.04 -509.71,0.7 -509.71,0.7 l 1.58,189.76 h 508.13" />
+          <path class="dey-logo-type" style="
+            fill: #4b4b4b;
+            fill-opacity: 1;
+            fill-rule: nonzero;
+            stroke: none;
+          "
+            d="m 2732.28,4453.77 h 157.7 c 177.41,0 604.51,-85.43 604.51,-505.95 v -170.84 h -203.7 l -0.09,132.92 c 0,149.62 -107.22,344.55 -407.29,344.55 h -151.13 v 199.32" />
+        </g>
+    </svg></div>
+      `,
+      code_dark: ``,
+    }
   ],
 };
