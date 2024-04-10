@@ -477,6 +477,10 @@ main section.animate-2-en-bank svg.en-bank.animate path:nth-of-type(5) {
   animation-name: unset;
 }
 
+main section .dark svg.en-bank path {
+  fill: #fff;
+}
+
 @keyframes enBankTypeTwoOne {
   0% {
     transform: skewX(0deg);
