@@ -8,51 +8,38 @@
 </head>
 
 <body>
-
-  <div class="svg-icon svg-dark">
+  <div class="svg-icon svg-light">
     <style>
-      .en-bank path {
-        fill: #ffffff;
-      }
+svg.en-bank.animate path:nth-of-type(1) {
+  animation-name: enBankTypeTwoOne;
+  animation-duration: 200ms;
+}
 
-      svg.en-bank.animate path:nth-of-type(3) {
-        animation-name: enBankOne;
-        animation-duration: 200ms;
-      }
+svg.en-bank.animate path:nth-of-type(2) {
+  animation-name: enBankTypeTwoOne;
+  animation-duration: 200ms;
+  animation-delay: 50ms;
+}
+svg.en-bank.animate path:nth-of-type(3) {
+  animation-name: unset;
+}
+svg.en-bank.animate path:nth-of-type(4) {
+  animation-name: enBankTypeTwoOne;
+  animation-duration: 200ms;
+  animation-delay: 75ms;
+}
 
-      svg.en-bank.animate path:nth-of-type(5) {
-        animation-name: enBankTwo;
-        animation-duration: 200ms;
-        animation-delay: 50ms;
-      }
-
-      @keyframes enBankOne {
-        0% {
-          transform: translate3d(0px, 0px, 0px);
-        }
-
-        50% {
-          transform: translate3d(0px, 5000px, 0px);
-        }
-
-        100% {
-          transform: translate3d(0px, 0px, 0px);
-        }
-      }
-
-      @keyframes enBankTwo {
-        0% {
-          transform: translate3d(0px, 0px, 0px);
-        }
-
-        50% {
-          transform: translate3d(0px, -5000px, 0px);
-        }
-
-        100% {
-          transform: translate3d(0px, 0px, 0px);
-        }
-      }
+@keyframes enBankTypeTwoOne {
+  0% {
+    transform: skewX(0deg);
+  }
+  50% {
+    transform: skewX(20deg);
+  }
+  100% {
+    transform: skewX(0deg);
+  }
+}
     </style>
     <svg class="en-bank animate" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1350.000000 1014.000000"
       preserveAspectRatio="xMidYMid meet">
@@ -75,7 +62,6 @@
       </g>
     </svg>
   </div>
-
 </body>
 
 </html>
