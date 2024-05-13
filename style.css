@@ -29,6 +29,9 @@ main section {
 
 main section .dark-overlay {
   width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 main section .dark-overlay:before {
