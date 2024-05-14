@@ -478,7 +478,7 @@ main section.animate-2-en-bank svg.en-bank.animate path:nth-of-type(4) {
 }
 main section.animate-2-en-bank svg.en-bank.animate path:nth-of-type(5) {
   animation-name: unset;
-}
+}       
 
 main section .dark svg.en-bank path {
   fill: #fff;
@@ -496,7 +496,60 @@ main section .dark svg.en-bank path {
   }
 }
 
-@media screen and (max-width: 700px) {
+main section svg.mellat-bank.animate path:nth-of-type(1) {
+  animation-name: mellatBankTypeOnePartOne;
+  animation-duration: 200ms;
+}
+
+main section svg.mellat-bank.animate path:nth-of-type(2) {
+  animation-name: mellatBankTypeOnePartTwo;
+  animation-duration: 200ms;
+  animation-delay: 50ms;
+}
+
+main section svg.mellat-bank.animate path:nth-of-type(3) {
+  animation-name: mellatBankTypeOnePartThree;
+  animation-duration: 200ms;
+  animation-delay: 100ms;
+}
+
+@keyframes mellatBankTypeOnePartOne {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  50% {
+    transform: translate3d(20px, 20px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+
+@keyframes mellatBankTypeOnePartTwo {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  50% {
+    transform: translate3d(-22px, 22px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+
+@keyframes mellatBankTypeOnePartThree {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  50% {
+    transform: translate3d(-2px, -16px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+
+@media screen and (max-width: 900px) {
   main {
     flex-direction: column;
     gap: 55px 0px;
