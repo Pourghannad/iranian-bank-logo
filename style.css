@@ -16,6 +16,12 @@ main {
   align-items: center;
   gap: 25px;
 }
+main > h6 {
+  position: absolute;
+  top: -25px;
+  font-size: 16px;
+  color: #6a1515;
+}
 
 main section {
   display: flex;
@@ -478,7 +484,7 @@ main section.animate-2-en-bank svg.en-bank.animate path:nth-of-type(4) {
 }
 main section.animate-2-en-bank svg.en-bank.animate path:nth-of-type(5) {
   animation-name: unset;
-}       
+}
 
 main section .dark svg.en-bank path {
   fill: #fff;
@@ -517,37 +523,37 @@ main section svg.mellat-bank.animate path:nth-of-type(3) {
 
 @keyframes mellatBankTypeOnePartOne {
   0% {
-    transform: translate3d(0px, 0px, 0px) scale3d(1,1,1);
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
   }
   50% {
-    transform: translate3d(20px, 20px, 0px) scale3d(1,1.25,1);
+    transform: translate3d(20px, 20px, 0px) scale3d(1, 1.25, 1);
   }
   100% {
-    transform: translate3d(0px, 0px, 0px) scale3d(1,1,1);
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
   }
 }
 
 @keyframes mellatBankTypeOnePartTwo {
   0% {
-    transform: translate3d(0px, 0px, 0px) scale3d(1,1,1);
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
   }
   50% {
-    transform: translate3d(-22px, 22px, 0px) scale3d(1,1.20,1);
+    transform: translate3d(-22px, 22px, 0px) scale3d(1, 1.2, 1);
   }
   100% {
-    transform: translate3d(0px, 0px, 0px) scale3d(1,1,1);
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
   }
 }
 
 @keyframes mellatBankTypeOnePartThree {
   0% {
-    transform: translate3d(0px, 0px, 0px) scale3d(1,1,1);
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
   }
   50% {
-    transform: translate3d(-2px, -16px, 0px) scale3d(1,1.2,1);
+    transform: translate3d(-2px, -16px, 0px) scale3d(1, 1.2, 1);
   }
   100% {
-    transform: translate3d(0px, 0px, 0px) scale3d(1,1,1);
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
   }
 }
 
