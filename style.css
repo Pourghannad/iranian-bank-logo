@@ -551,6 +551,54 @@ main section svg.mellat-bank.animate path:nth-of-type(3) {
   }
 }
 
+main section.animate-2-mellat-bank svg.mellat-bank.animate path:nth-of-type(1),
+main section.animate-2-mellat-bank svg.mellat-bank.animate path:nth-of-type(2),
+main section.animate-2-mellat-bank svg.mellat-bank.animate path:nth-of-type(3) {
+  animation-name: mellatBankTypeTwoPetals;
+  transform-box: view-box;
+  transform-origin: 535px 596px;
+  animation-duration: 280ms;
+}
+
+main section.animate-2-mellat-bank svg.mellat-bank.animate path:nth-of-type(2) {
+  animation-delay: 40ms;
+}
+
+main section.animate-2-mellat-bank svg.mellat-bank.animate path:nth-of-type(3) {
+  animation-delay: 80ms;
+}
+
+main section.animate-2-mellat-bank svg.mellat-bank.animate path:nth-of-type(4) {
+  animation-name: mellatBankTypeTwoCenter;
+  transform-box: view-box;
+  transform-origin: 535px 596px;
+  animation-duration: 280ms;
+}
+
+@keyframes mellatBankTypeTwoPetals {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(10deg) scale(1.04);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@keyframes mellatBankTypeTwoCenter {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.86);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 @media screen and (max-width: 900px) {
   main {
     flex-direction: column;

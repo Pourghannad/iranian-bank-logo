@@ -1797,61 +1797,60 @@ svg.mellat-bank.animate path:nth-of-type(3) {
           <path fill="#fec62f" d="M 531.5,444.5 C 594.781,444.045 642.615,470.711 675,524.5C 695.054,563.214 699.054,603.547 687,645.5C 669.739,696.427 635.573,730.261 584.5,747C 519.49,763.546 464.656,747.046 420,697.5C 383.89,649.989 375.89,597.989 396,541.5C 422.448,483.025 467.615,450.692 531.5,444.5 Z"/>
         </svg>
       `,
-      code_dark: `
-      <div class="svg-icon svg-dark">
+      get code_dark() {
+        return this.code_light;
+      }
+    },
+    {
+      key: 2,
+      code_light: `
+      <div class="svg-icon svg-light">
     <style>
-      svg.mellat-bank.animate path:nth-of-type(1) {
-  animation-name: mellatBankTypeOnePartOne;
-  animation-duration: 200ms;
+      svg.mellat-bank.animate path:nth-of-type(1),
+      svg.mellat-bank.animate path:nth-of-type(2),
+      svg.mellat-bank.animate path:nth-of-type(3) {
+  animation-name: mellatBankTypeTwoPetals;
+  transform-box: view-box;
+  transform-origin: 535px 596px;
+  animation-duration: 280ms;
 }
 
 svg.mellat-bank.animate path:nth-of-type(2) {
-  animation-name: mellatBankTypeOnePartTwo;
-  transform-origin: 0px 690px;
-  animation-duration: 200ms;
   animation-delay: 40ms;
 }
 
 svg.mellat-bank.animate path:nth-of-type(3) {
-  animation-name: mellatBankTypeOnePartThree;
-  animation-duration: 200ms;
-  transform-origin: 0px 990px;
   animation-delay: 80ms;
 }
 
-@keyframes mellatBankTypeOnePartOne {
+svg.mellat-bank.animate path:nth-of-type(4) {
+  animation-name: mellatBankTypeTwoCenter;
+  transform-box: view-box;
+  transform-origin: 535px 596px;
+  animation-duration: 280ms;
+}
+
+@keyframes mellatBankTypeTwoPetals {
   0% {
-    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
+    transform: rotate(0deg) scale(1);
   }
   50% {
-    transform: translate3d(20px, 20px, 0px) scale3d(1, 1.25, 1);
+    transform: rotate(10deg) scale(1.04);
   }
   100% {
-    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
+    transform: rotate(0deg) scale(1);
   }
 }
 
-@keyframes mellatBankTypeOnePartTwo {
+@keyframes mellatBankTypeTwoCenter {
   0% {
-    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
+    transform: scale(1);
   }
   50% {
-    transform: translate3d(-22px, 22px, 0px) scale3d(1, 1.2, 1);
+    transform: scale(0.86);
   }
   100% {
-    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
-  }
-}
-
-@keyframes mellatBankTypeOnePartThree {
-  0% {
-    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
-  }
-  50% {
-    transform: translate3d(-2px, -16px, 0px) scale3d(1, 1.2, 1);
-  }
-  100% {
-    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
+    transform: scale(1);
   }
 }
 
@@ -1862,7 +1861,10 @@ svg.mellat-bank.animate path:nth-of-type(3) {
           <path fill="#b90a21" d="M 179.5,441.5 C 180.256,564.334 180.423,687.334 180,810.5C 181.974,821.857 188.14,825.357 198.5,821C 259.601,785.7 320.768,750.533 382,715.5C 434.634,779.942 502.134,804.442 584.5,789C 630.492,777.614 667.992,753.448 697,716.5C 742.728,741.947 788.228,767.78 833.5,794C 834.357,794.689 835.023,795.522 835.5,796.5C 682.629,884.533 529.629,972.367 376.5,1060C 349.545,1070.98 323.212,1069.65 297.5,1056C 210.663,1005.75 123.663,955.747 36.5,906C 28.7554,900.912 24.2554,893.745 23,884.5C 22.3333,780.167 22.3333,675.833 23,571.5C 25.8699,546.585 37.3699,526.752 57.5,512C 98.3352,488.636 139.002,465.136 179.5,441.5 Z"/>
           <path fill="#fec62f" d="M 531.5,444.5 C 594.781,444.045 642.615,470.711 675,524.5C 695.054,563.214 699.054,603.547 687,645.5C 669.739,696.427 635.573,730.261 584.5,747C 519.49,763.546 464.656,747.046 420,697.5C 383.89,649.989 375.89,597.989 396,541.5C 422.448,483.025 467.615,450.692 531.5,444.5 Z"/>
         </svg>
-      `
+      `,
+      get code_dark() {
+        return this.code_light;
+      }
     }
   ]
 };
