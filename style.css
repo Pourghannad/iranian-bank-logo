@@ -188,6 +188,26 @@ main section.animate-2-saman svg.saman.animate #path20 {
   animation-name: samanTwo;
 }
 
+main section.animate-3-saman svg.saman.animate #path16,
+main section.animate-3-saman svg.saman.animate #path18,
+main section.animate-3-saman svg.saman.animate #path20 {
+  animation-name: samanThree;
+}
+
+@keyframes samanThree {
+  0% {
+    transform: rotate3d(0, 0, 1, 0deg) scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: rotate3d(0, 0, 1, 3deg) scale3d(1.0001, 1.0001, 1);
+  }
+
+  100% {
+    transform: rotate3d(0, 0, 1, 0deg) scale3d(1, 1, 1);
+  }
+}
+
 @keyframes samanLogoType {
   0% {
     fill: transparent;
@@ -599,7 +619,6 @@ main section.animate-2-mellat-bank svg.mellat-bank.animate path:nth-of-type(4) {
   }
 }
 
-/* NEW: Mellat Bank — Animation Type 3 (radial pulse) */
 main section.animate-3-mellat-bank svg.mellat-bank.animate path:nth-of-type(1),
 main section.animate-3-mellat-bank svg.mellat-bank.animate path:nth-of-type(2),
 main section.animate-3-mellat-bank svg.mellat-bank.animate path:nth-of-type(3) {
