@@ -599,6 +599,55 @@ main section.animate-2-mellat-bank svg.mellat-bank.animate path:nth-of-type(4) {
   }
 }
 
+/* NEW: Mellat Bank — Animation Type 3 (radial pulse) */
+main section.animate-3-mellat-bank svg.mellat-bank.animate path:nth-of-type(1),
+main section.animate-3-mellat-bank svg.mellat-bank.animate path:nth-of-type(2),
+main section.animate-3-mellat-bank svg.mellat-bank.animate path:nth-of-type(3) {
+  animation-name: mellatBankTypeThreePetals;
+  transform-box: view-box;
+  transform-origin: 535px 596px;
+  animation-duration: 280ms;
+}
+
+main section.animate-3-mellat-bank svg.mellat-bank.animate path:nth-of-type(2) {
+  animation-delay: 60ms;
+}
+
+main section.animate-3-mellat-bank svg.mellat-bank.animate path:nth-of-type(3) {
+  animation-delay: 120ms;
+}
+
+main section.animate-3-mellat-bank svg.mellat-bank.animate path:nth-of-type(4) {
+  animation-name: mellatBankTypeThreeCenter;
+  transform-box: view-box;
+  transform-origin: 535px 596px;
+  animation-duration: 280ms;
+}
+
+@keyframes mellatBankTypeThreePetals {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.12);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes mellatBankTypeThreeCenter {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.85);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 @media screen and (max-width: 900px) {
   main {
     flex-direction: column;
